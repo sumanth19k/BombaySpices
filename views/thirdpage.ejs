@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bombay Spices</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/76099166eb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	
+</head>
+	
+<style type="text/css">
+	body{
+		background-color: white;
+	}
+	
+	.nav-item{
+		padding-left: 87px;
+		padding-top: 10px;
+		padding-right: 10px;
+		font-family: 'Luckiest Guy', cursive;
+		
+		font-size: 20px;
+
+
+	}
+	h1{
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 50px;
+		padding-left: 20px
+	}
+	
+	.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: black;
+}
+.nav-link:hover{
+	color: red;
+}
+.chilliimage{
+	width: 20px;
+	padding-left: 20px;
+	align-content: center;
+	
+}
+
+h1{
+	color: white;
+}
+.wow{
+	background-color: red;
+}
+.main{
+	font-family: 'Hind', sans-serif;
+	font-size: 210px;
+ 
+  background-image: linear-gradient( #ff6347,yellow);
+  padding-left: 10px;
+  padding-top: 30px;
+
+
+}
+
+#nv{
+	margin-left: 500px;
+}
+
+.hindi{
+	
+	font-family: 'Hind', sans-serif;
+}
+
+	.vellore{
+		width: 450px;
+		padding-left: 100px;
+	}
+	.main2{
+		background-image: linear-gradient(yellow,red);
+
+	}
+	#rey{
+		width: 1349px;
+	}
+	
+	#nv{
+		width: 500px;
+	}
+	p{
+		font-size: 50px;
+		font-family: 'Quicksand', sans-serif;
+		padding-top: 10px;
+		padding-left: 60px;
+  font-weight: 900;
+  color: black;
+
+}
+.tom{
+	background-color: red;
+}
+
+
+
+	.tabla{
+		font-size: 52px;
+		
+font-family: 'Dancing Script', cursive;
+	}
+	td{
+		
+		font-size: 52px;
+	}
+
+	table{
+		margin-left: 70px;
+	}
+	.navbar {
+    
+    padding-left: 1rem;
+}
+td{
+	width: 600px;
+	border: 50px red solid;
+	
+	background-image:linear-gradient(yellow,red);
+	height: 600px;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.img{
+	width: 500px;
+	height:400px;
+	padding-left: 50px;
+	
+	padding-top: 10px;
+
+}
+.texte{
+	font-size: 40px;
+	align-self: center;
+	padding-left: 60px;
+	color: white;
+
+}
+</style>
+<body>
+<nav class="navbar sticky-top" style="margin-left:5rem">
+	<div class="wow">
+	<ul class="nav nav-pills sticky-top">
+		<li><h1>Bombay Spices</h1></li>
+  <li class="nav-item">
+    <a class="nav-link" href="/secondpage">Menu</a>
+  </li>
+  
+    <li class="nav-item">
+    <a class="nav-link  " href="/thirdpage">Reservations</a>
+  </li>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/fourthpage">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+</ul>
+</div>
+</nav>
+
+<div class="container w3-black w3-padding-64 w3-xxlarge" style="background-image: linear-gradient( #ff6347,yellow);">
+	<p style="font-family: 'Luckiest Guy', cursive; margin-left:140px">
+		Query form for reservations
+	</p>
+	<br>
+	<br>
+	<br>
+	<form action='/submitquery' method="POST">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label" style="width:100px">Email</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" name="email" placeholder="Enter Your email address">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Full Name</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword3" name="fname" placeholder="Enter Your Full Name">
+    </div>
+  </div>
+		<div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Phone Number</label>
+    <div class="col-sm-10">
+      <input class="form-control" id="inputPassword3" name="phno" placeholder="Enter your number">
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+          <label class="form-check-label" for="gridRadios1">
+            Non AC
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+          <label class="form-check-label" for="gridRadios2">
+            AC
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+          <label class="form-check-label" for="gridRadios3">
+            Executive
+          </label>
+        </div>
+      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <div class="col-sm-2">Checkbox</div>
+    <div class="col-sm-10">
+     
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary" style="margin-left:500px;font-size:30px">Submit</button>
+    </div>
+	  <br>
+	<br>
+	<br>
+	<br>
+	  <br>
+	<br>
+	<br>
+	
+  </div>
+</form>
+	</div>
+	
+  
+
+</body>
+
+</html>

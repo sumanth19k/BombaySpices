@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bombay Spices</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script|Lobster&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/76099166eb.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+	
+</head>
+	<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+<style type="text/css">
+	body{
+		background-color: white;
+	}
+	
+	.nav-item{
+		padding-left: 87px;
+		padding-top: 10px;
+		padding-right: 10px;
+		font-family: 'Luckiest Guy', cursive;
+		
+		font-size: 20px;
+
+
+	}
+	h1{
+		font-family: 'Luckiest Guy', cursive;
+		font-size: 50px;
+		padding-left: 20px
+	}
+	
+	.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: black;
+}
+.nav-link:hover{
+	color: red;
+}
+.chilliimage{
+	width: 20px;
+	padding-left: 20px;
+	align-content: center;
+	
+}
+
+h1{
+	color: white;
+}
+.wow{
+	background-color: red;
+}
+.main{
+	font-family: 'Hind', sans-serif;
+	font-size: 210px;
+ 
+  background-image: linear-gradient( #ff6347,yellow);
+  padding-left: 10px;
+  padding-top: 30px;
+
+
+}
+
+#nv{
+	margin-left: 500px;
+}
+
+.hindi{
+	
+	font-family: 'Hind', sans-serif;
+}
+
+	.vellore{
+		width: 450px;
+		padding-left: 100px;
+	}
+	.main2{
+		background-image: linear-gradient(yellow,red);
+
+	}
+	#rey{
+		width: 1349px;
+	}
+	
+	#nv{
+		width: 500px;
+	}
+	p{
+		font-size: 50px;
+		font-family: 'Quicksand', sans-serif;
+		padding-top: 10px;
+		padding-left: 60px;
+  font-weight: 900;
+  color: black;
+
+}
+.tom{
+	background-color: red;
+}
+
+
+
+	.tabla{
+		font-size: 52px;
+		
+font-family: 'Dancing Script', cursive;
+	}
+	td{
+		
+		font-size: 52px;
+	}
+
+	table{
+		margin-left: 70px;
+	}
+	.navbar {
+    
+    padding-left: 1rem;
+}
+td{
+	width: 600px;
+	border: 50px red solid;
+	
+	background-image:linear-gradient(yellow,red);
+	height: 600px;
+	font-family: 'Quicksand', sans-serif;
+
+}
+.img{
+	width: 500px;
+	height:400px;
+	padding-left: 50px;
+	
+	padding-top: 10px;
+
+}
+.texte{
+	font-size: 40px;
+	align-self: center;
+	padding-left: 60px;
+	color: white;
+
+}
+</style>
+<body>
+<nav class="navbar sticky-top" style="padding-left:4rem">
+	<div class="wow">
+	<ul class="nav nav-pills sticky-top">
+		<li><h1>Bombay Spices</h1></li>
+  <li class="nav-item">
+    <a class="nav-link" href="/secondpage">Menu</a>
+  </li>
+  
+    <li class="nav-item">
+    <a class="nav-link  " href="/thirdpage">Reservations</a>
+  </li>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/fourthpage">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+</ul>
+</div>
+</nav>
+
+<div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu" style="background-image: linear-gradient( #ff6347,yellow);">
+  <div class="w3-content" style="font-size:40px">
+  
+    <h1 class="w3-center w3-jumbo" style="style=margin-bottom:64px;color:black;text-align:center;background-image: linear-gradient( #ff6347,yellow);">THE MENU</h1>
+    <div class="row w3-border-dark-grey justify-content-center">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pizza');" id="myLink">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red" style="margin-left:10px;font-family: 'Luckiest Guy', cursive; color:white">Pizza</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Pasta');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"  style="margin-left:100px;font-family: 'Luckiest Guy', cursive;color:white">Salads</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"  style="margin-left:100px;font-family: 'Luckiest Guy', cursive;color:white">Starter</div>
+      </a>
+		<a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"  style="margin-left:100px;font-family: 'Luckiest Guy', cursive;color:white">Main Course</div>
+      </a>
+		<a href="javascript:void(0)" onclick="openMenu(event, 'Starter');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red"  style="margin-left:100px;font-family: 'Luckiest Guy', cursive;color:white">Refreshments</div>
+      </a>
+    </div>
+	  <br>
+	  
+
+    <div id="Pizza" class="w3-container menu w3-padding-32 w3-white" style="font-size:20px">
+      <h1><b style="color:black;font-size:30px">Margherita</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">399/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, fresh mozzarella, fresh basil</p>
+      <hr>
+   
+      <h1><b style="color:black;font-size:30px">Formaggio</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">299/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+      <hr>
+      
+      <h1><b style="color:black;font-size:30px">Chicken</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">249/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, mozzarella, chicken, onions</p>
+      <hr>
+
+      <h1><b style="color:black;font-size:30px">Pineapple'o'clock</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">169/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+      <hr>
+
+      <h1><b style="color:black;font-size:30px">Meat Town</b> <span class="w3-tag w3-red w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">Hot!</span><span class="w3-right w3-tag w3-dark-grey w3-round" style='font-size:30px'>599/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, chicken</p>
+      <hr>
+
+      <h1><b style="color:black;font-size:30px">Parma</b> <span class="w3-tag w3-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">New</span><span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:30px">499/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+    </div>
+
+    <div id="Pasta" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b style="color:black;font-size:30px">Lasagna</b> <span class="w3-tag w3-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">Popular</span> <span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:30px">199/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Special sauce, mozzarella, parmesan, ground beef</p>
+      <hr>
+   
+      <h1><b style="color:black;font-size:30px">Ravioli</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">159/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Ravioli filled with cheese</p>
+      <hr>
+      
+      <h1><b style="color:black;font-size:30px">Spaghetti Classica</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">299/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Fresh tomatoes, onions, ground beef</p>
+      <hr>
+
+      <h1><b style="color:black;font-size:30px">Seafood pasta</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">249/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Salmon, shrimp, lobster, garlic</p>
+    </div>
+
+
+    <div id="Starter" class="w3-container menu w3-padding-32 w3-white">
+      <h1><b style="color:black;font-size:30px">Today's Soup</b> <span class="w3-tag w3-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">Seasonal</span><span class="w3-right w3-tag w3-dark-grey w3-round" style="font-size:30px">99/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Ask the waiter</p>
+      <hr>
+   
+      <h1><b style="color:black;font-size:30px">Bruschetta</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">99/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Bread with pesto, tomatoes, onion, garlic</p>
+      <hr>
+      
+      <h1><b style="color:black;font-size:30px">Garlic bread</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">159/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Grilled ciabatta, garlic butter, onions</p>
+      <hr>
+      
+      <h1><b style="color:black;font-size:30px">Tomozzarella</b> <span class="w3-right w3-tag w3-dark-grey w3-round" style="style=color:#A9A9A9;margin-left:40px;font-size:30px">199/-</span></h1>
+      <p class="w3-text-grey" style="font-size:30px">Tomatoes and mozzarella</p>
+    </div><br>
+
+  </div>
+</div>
+
+</body>
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+</html>
